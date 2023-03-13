@@ -1,0 +1,1069 @@
+/* FONTS */
+
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* scada-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/scada-v14-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/scada-v14-latin-regular.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* scada-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/scada-v14-latin-700.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url('../fonts/scada-v14-latin-700.woff') format('woff');
+  /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* HEADER START*/
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #D1B98C;
+}
+
+.header__wrapper {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.header__navigation {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__list-2 {
+  display: flex;
+}
+
+.header__item {
+  padding-right: 24px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.header__item-2 {
+  padding-right: 24px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.header__item-link {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1B1B1B;
+}
+
+.header__item-link:hover {
+  color: #504f4f;
+}
+
+.header__item-link-2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1B1B1B;
+}
+
+.header__item-link-2:hover {
+  color: #504f4f;
+}
+
+/* HEADER END */
+
+/* HEADER-2 START */
+.header-2 {
+  background-color: #F5F5F5;
+  height: 205px;
+}
+
+.header__wrapper-2 {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.header__navigation-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  margin-top: 101px;
+  margin-bottom: 88px;
+}
+
+.header__button {
+  width: 192px;
+  height: 72px;
+  background-color: #264693;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.help {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 5px;
+  color: #2E858B;
+  text-decoration: underline;
+}
+
+.header__button-link {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.button__lines {
+  width: 24px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.button__lines::after {
+  content: '';
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0px 0 #fff,
+    0 8px 0 #fff,
+    0 16px 0 #fff;
+  transition: all .2s;
+}
+
+.button__lines:hover::after {
+  width: 20px;
+  margin-left: 2px;
+}
+
+.header__input-search {
+  width: 639px;
+  height: 72px;
+  border-radius: 4px;
+  border: 1px solid #D1B98C;
+  outline: none;
+  background: url(./img/search.png) no-repeat center right 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1B1B1B;
+  background-color: #fff;
+  margin-top: 39px;
+  /* margin-right: 20px; */
+}
+
+.header__input-search::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  border: none;
+  padding-left: 24px;
+}
+
+.header__information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sales__department {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1B1B1B;
+}
+
+.sales {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.head__phones-pic {
+  width: 20px;
+  height: 18px;
+  color: #2E858B;
+  margin-right: 7px;
+}
+
+.nubmer {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1B1B1B;
+}
+
+.timetable {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1B1B1B;
+  margin-bottom: 8px;
+  opacity: 0.4;
+}
+
+.callback {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2E858B;
+}
+
+/* HEADER-2 END */
+
+/* SECTION LINES START */
+.section__lines {
+  max-width: 632px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  background-color: #F5F5F5;
+}
+
+.lines {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 24px;
+}
+
+.line {
+  width: 120px;
+  height: 8px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+}
+
+.line:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #2E858B;
+}
+
+.line__main {
+  background-color: #2E858B;
+}
+
+/* SECTION LINES END */
+
+/* COMPANIES CARDS START */
+.card {
+  width: 192px;
+  height: 88px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 4px solid #F5F5F5;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: rgba(243, 242, 242, 1);
+  cursor: pointer;
+}
+
+.wrapper__main {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.companies__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company__card-pic {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+/* COMPANIES CARDS END */
+
+/* OIL CARDS START */
+.oil {
+  width: 100%;
+  background-color: #fff;
+}
+
+.wrapper__oil {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.oil__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.oil__card {
+  width: 416px;
+  height: 465px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 4px solid #F5F5F5;
+  margin-bottom: 50px;
+}
+
+.oil__card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.oil__title {
+  font-family: 'Scada';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  color: #1B1B1B;
+}
+
+.oil__discription p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1B1B1B;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.oil__description-2 p {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1B1B1B;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.other__positions {
+  color: orange !important;
+}
+
+.pic__and__titile {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.oil__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card__hr {
+  width: 50%;
+  margin: 0 25% 0 25%;
+  border: 4px solid #F5F5F5;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* OIL CARDS END */
+
+/* NEWS START */
+.wrapper__news {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.news__title {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  color: #1B1B1B;
+  margin-bottom: 25px;
+}
+
+.news__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.news__card {
+  width: 420.5px;
+  height: 402px;
+  border-radius: 12px;
+  border: 4px solid #F5F5F5;
+}
+
+.news__card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.news__titles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.news__title-2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #2E858B;
+}
+
+.news__description {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #1B1B1B;
+  margin-left: 20px;
+}
+
+.news__time {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1B1B1B;
+  opacity: 0.4;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+/* NEWS END */
+/* MEDIA START */
+.wrapper__media {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.media__title {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  color: #1B1B1B;
+  margin-bottom: 32px;
+}
+
+.media__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media__card {
+  width: 416px;
+  height: 152px;
+  background-color: #D1B98C;
+  border-radius: 12px;
+  border: 4px solid #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 32px;
+}
+
+.media__card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card__bg {
+  background-color: #fff;
+}
+
+.media__name {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.media__name-color {
+  color: #D1B98C;
+}
+
+.media__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.media__text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  opacity: 0.7;
+  padding-right: 56px;
+}
+
+/* MEDIA END */
+/* LOCATION START */
+.wrapper__location {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.location__title {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  color: #1B1B1B;
+  margin-bottom: 32px;
+}
+
+.location__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location__cards-2 {
+  width: 416px;
+  height: 297px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: 4px solid #F5F5F5;
+  display: flex;
+  flex-direction: column;
+}
+
+.location__name__and__icon {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 7px;
+  margin-left: 24px;
+}
+
+.location__icon {
+  padding-right: 11px;
+}
+
+.location__description {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1B1B1B;
+  opacity: 0.4;
+}
+
+.location__text {
+  font-family: 'Scada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #1B1B1B;
+  margin-left: 24px;
+}
+
+.map__loc {
+  position: relative;
+  top: -211px;
+  left: 410px;
+}
+
+.map__loc:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.map:hover {
+  cursor: pointer;
+}
+
+/* LOCATION END */
+/* FOOTER START */
+.footer {
+  width: 100%;
+  height: 534px;
+  background-color: #B2AF8A;
+}
+
+.footer__wrapper {
+  max-width: 1312px;
+  margin: 0 auto;
+}
+
+.footer__section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  margin-top: 125px;
+}
+
+.footer__decription {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1B1B1B;
+  margin-top: 94px;
+}
+
+.footer__decription p {
+  padding-bottom: 16px;
+}
+
+.footer__decription p:hover {
+  color: #504f4f;
+  cursor: pointer;
+}
+
+.footer__information {
+  margin-top: 94px;
+}
+
+.callback__color {
+  color: red;
+}
+
+.footer__section-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__icons {
+  display: flex;
+  align-items: center;
+}
+
+.visa__icon {
+  padding-right: 20px;
+}
+
+.visa__icon:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.master__card-icon:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.mir__icon:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.master__card-icon {
+  padding-right: 20px;
+}
+
+.footer__text {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 0.4;
+  margin-top: 37px;
+}
+
+.footer__hr {
+  border: .5px solid red;
+  margin-top: 70px;
+  margin-bottom: 28px;
+}
+
+.footer__inc {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #fff;
+  opacity: 0.4;
+  margin-bottom: 32px;
+}
+.mobile__version{
+  display: none;
+}
+.header__burger{
+  display: none;
+}
+
+/* FOOTER END */
+
+/* MEDIA FOR IPHONE X */
+/* START */
+@media screen and (max-width: 376px) {
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .mobile__version{
+    display: block;
+    background-color: #D1B98C;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  .mobile__version::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D1B98C;
+    z-index: 2;
+  }
+  .header__list{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    background-color: #264693;
+    padding: 70px 0px 0px 130px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header__list.active{
+    top: 0;
+    height: 100%;
+  }
+  .header__item a{
+    color: #fff;
+    font-size: 16px;
+  }
+  .header__item a:hover{
+    color: green;
+  }
+  .mobile__version img{
+    width: 150px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    top: 10px;
+    left: 10px;
+  }
+  .header {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .header__information {
+    display: none;
+  }
+
+  .header-2 {
+    display: none;
+  }
+  .mobile__navigation{
+    display: flex;
+    justify-content: space-between;
+  }
+  /* BURGER START */
+  .header__burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+  }
+  .header__burger::before,
+  .header__burger::after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before{
+    top: 0;
+  }
+  .header__burger::after{
+    bottom: 0;
+  }
+  .header__burger span{
+    position: relative;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger.active::before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .header__burger.active span{
+    transform: scale(0);
+  }
+  /* BURGER END */
+  .line {
+    width: 60px;
+  }
+
+  .lines {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+  }
+
+  .companies__cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .oil__card {
+    width: 375px;
+    height: 430px;
+  }
+
+  .news__title {
+    text-align: center;
+  }
+
+  .news__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news__card {
+    width: 375px;
+    margin-bottom: 50px;
+  }
+
+  .media__title {
+    text-align: center;
+  }
+
+  .media__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media__card {
+    width: 324px;
+  }
+
+  .media__name-color {
+    margin-left: 63px;
+  }
+
+  .media__description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .media__text {
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  .location__title {
+    text-align: center;
+  }
+
+  .location__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map__pic {
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .location__cards-2 {
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    height: 100%;
+  }
+
+  .footer__section-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__logo img {
+    margin-left: 100px;
+  }
+
+  .footer__decription {
+    text-align: center;
+  }
+
+  .footer__information {
+    text-align: center;
+  }
+
+  .sales {
+    margin-left: 125px;
+  }
+
+  .footer__section-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__icons img {
+    margin-top: 30px;
+  }
+
+  .footer__text {
+    text-align: center;
+  }
+
+  .footer__hr {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .footer__inc {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+/* END  */
+
+/* TNX FOR WORK */
